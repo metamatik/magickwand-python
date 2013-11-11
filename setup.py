@@ -9,7 +9,7 @@ def read( fname ):
     return open( os.path.join( os.path.dirname( __file__ ), fname ) ).read()
 
 setup( name = 'magickwand',
-       version = '0.2',
+       version = '0.2.1',
        description = '''Python bindings for ImageMagick's MagickWand 6.6.0''',
        long_description = read( 'README' ),
        keywords = "ImageMagick MagickWand CDLL Binding",

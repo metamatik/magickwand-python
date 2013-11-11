@@ -43,6 +43,11 @@ class Image( object ):
             api.MagickSetFilename( self._wand, 'buffer.%s' % type )  # hint image type
         self._check_wand_error( api.MagickNewImage( self._wand, columns, rows, color.TRANSPARENT._wand ) )
 
+    def create_white( self, columns = 100, rows = 100, type = None ):
+        if type:
+            api.MagickSetFilename( self._wand, 'buffer.%s' % type )  # hint image type
+        self._check_wand_error( api.MagickNewImage( self._wand, columns, rows, color.WHITE._wand ) )
+
     def _check_wand_error( self, func ):
         if not func:
             severity = ExceptionType()

@@ -1,4 +1,4 @@
-Metadata-Version: 1.0
+Metadata-Version: 1.1
 Name: magickwand
 Version: 0.2
 Summary: Python bindings for ImageMagick's MagickWand 6.6.0
